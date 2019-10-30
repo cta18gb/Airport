@@ -3,8 +3,10 @@ package gr.athtech.ioo;
 public class Flight {
     private String arAirport;
     private String depAirport;
+    private Time depTime;
+    private Time arTime;
 
-    public void setArAirport(String ArAirport) {
+    public void setArAirport(String arAirport) {
         this.arAirport = arAirport;
     }
 
@@ -18,19 +20,30 @@ public class Flight {
     public String getdepAirport() {
         return depAirport;
     }
-    public String toString(){
-        return depAirport + ","+ arAirport;
+
+    public Time getDepTime() {
+        return depTime;
     }
 
+    public void setDepTime(Time depTime) {
+        this.depTime = depTime;
+    }
 
+    public Time getArTime() {
+        return arTime;
+    }
 
+    public void setArTime(Time arTime) {
+        this.arTime = arTime;
+    }
 
-
-
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "Flight{" +
+                "arAirport='" + arAirport + '\'' +
+                ", depAirport='" + depAirport + '\'' +
+                ", depTime=" + depTime +
+                ", arTime=" + arTime +
+                '}';
+    }
 }
