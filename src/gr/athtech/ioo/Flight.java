@@ -8,14 +8,14 @@ public class Flight {
         this.arAirport = arAirport;
     }
 
-    public String getarAirport(String ArAirport) {
+    public String getarAirport() {
         return arAirport;
     }
 
     public void setdepAirport(String depAirport) {
         this.depAirport = depAirport;
     }
-    public String getdepAirport(String depAirport) {
+    public String getdepAirport() {
         return depAirport;
     }
     public String toString(){
